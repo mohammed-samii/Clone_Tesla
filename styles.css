@@ -1,0 +1,823 @@
+@font-face {
+    font-family: 'Open Sans_Bold';
+    src: url(assets/font/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'Open Sans_Regular' ;
+    src: url(assets/font/OpenSans-Regular.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Open Sans_Medium' ;
+    src: url(assets/font/OpenSans-Medium.ttf);
+}
+@font-face {
+    font-family: 'Open Sans_Light' ;
+    src: url(assets/font/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: 'Open Sans_SemiBold' ;
+    src: url(assets/font/OpenSans-SemiBold.ttf);
+}
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+}
+header {    
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: transparent;
+    font-family: 'Open Sans_SemiBold';
+    font-size: 13px;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    left: 0;
+    font-weight: bolder;
+}
+.left img{
+    width: 100%;
+    max-width: 120px;
+    margin-left: 30px;
+}
+.right{
+    display: flex;
+    margin-right: 50px;
+    gap: 10px;
+}
+.right img{
+    width: 100%;
+    max-width: 25px;
+}
+.middle {
+    margin-left: -3rem;
+    text-align: center;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.middle a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400;
+}
+.middle li {
+    list-style: none;
+}
+.hero{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh; /* Ensure it takes the full viewport height */
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.text-overlay{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    margin-top: -3rem;
+}
+.first{
+    font-size: 2.2rem;
+    font-weight: 550;
+    margin-bottom: -15px;
+}
+.second{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: -25px;
+}
+.third{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 24rem;
+    color: rgb(66, 63, 63);
+    position: relative;
+    transition: color 0.3s ease-in;
+}
+.third::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Start at the center */
+    width: 60%; /* Adjust this to set the desired width */
+    height: 1.4px; /* Adjust thickness */
+    background-color: rgb(66, 63, 63); /* Adjust color */
+    transform: translateX(-52%); /* Center align */
+    transition: height 0.5s ease-in background-color 0.5s ease-in;
+}
+.third:hover::after{
+    height: 2.5px;
+    background-color: black;
+}
+.third:hover{
+    color: black;
+}
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    width: 100%;
+}
+.hero_btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.hero_btn:hover {
+    background-color: rgb(254, 254, 254);
+    color: rgb(0, 0, 0);
+}
+.hero_btn2 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.hero_btn2:hover {
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+/* Starting of 2nd page */
+.hero2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh; /* Ensure it takes the full viewport height */
+}
+.hero2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.text-overlay2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    margin-top: -3rem;
+}
+.first2{
+    font-size: 2.2rem;
+    font-weight: 550;
+    margin-bottom: -15px;
+}
+.second2{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: -25px;
+}
+.third2{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 24rem;
+    color: rgb(66, 63, 63);
+    position: relative;
+    transition: color 0.3s ease-in;
+}
+.third2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Start at the center */
+    width: 48%; /* Adjust this to set the desired width */
+    height: 1.4px; /* Adjust thickness */
+    background-color: rgb(66, 63, 63); /* Adjust color */
+    transform: translateX(-50%); /* Center align */
+    transition: height 0.5s ease-in background-color 0.5s ease-in;
+}
+.third2:hover::after{
+    height: 2.5px;
+    background-color: black;
+}
+.third2:hover{
+    color: black;
+}
+.button-container2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    width: 100%;
+}
+.second_btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.second_btn:hover {
+    background-color: rgb(254, 254, 254);
+    color: rgb(0, 0, 0);
+}
+.second_btn2 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.second_btn2:hover {
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+
+/* Starting of 3rd page */
+.hero3{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh; /* Ensure it takes the full viewport height */
+}
+.hero3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.text-overlay3{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    margin-top: -3rem;
+}
+.first3{
+    font-size: 2.2rem;
+    font-weight: 550;
+    margin-bottom: -15px;
+}
+.second3{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: -15px;
+}
+.third3{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 24rem;
+}
+.button-container3 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    width: 100%;
+}
+.third_btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.third_btn:hover {
+    background-color: rgb(254, 254, 254);
+    color: rgb(0, 0, 0);
+}
+.third_btn2 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.third_btn2:hover {
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+
+/* Starting of fourth page */
+.hero4{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh; /* Ensure it takes the full viewport height */
+}
+.hero4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.text-overlay4{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    margin-top: -3rem;
+}
+.first4{
+    font-size: 2.2rem;
+    font-weight: 550;
+    margin-bottom: -15px;
+}
+.second4{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: -15px;
+}
+.third4{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 24rem;
+}
+.button-container4 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    width: 100%;
+}
+.fourth_btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.fourth_btn:hover {
+    background-color: rgb(254, 254, 254);
+    color: rgb(0, 0, 0);
+}
+.fourth_btn2 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.fourth_btn2:hover {
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+
+/* Starting of fifth page */
+.cyberpunk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+}
+.cyberpunk_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.cyberpunk_text{
+    z-index: 2;
+    width: 30%;
+    margin-top: -26rem;
+    height: 30%;
+    position: absolute;
+}
+.button-container5{
+    margin-top: 26rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cyberpunk_btn{
+    background-color: rgba(0, 0, 0, 0.762);
+    padding: 10px 70px;
+    border: none;
+    text-transform: uppercase;
+    color: rgb(177, 173, 173);
+    font-family: 'Open Sans_Bold';
+}
+.cyberpunk_btn2{
+    background-color: rgba(0, 0, 0, 0.762);
+    padding: 10px 70px;
+    border: none;
+    color: rgb(160, 159, 159);
+    font-family: 'Open Sans_Bold';
+    text-transform: uppercase;
+    border: solid 0.01px rgb(80, 78, 78);
+}
+
+/* Starting of sixth page */
+.hero5{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh; /* Ensure it takes the full viewport height */
+}
+.hero5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.text-overlay5{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    margin-top: -3rem;
+}
+.first5{
+    font-size: 2.2rem;
+    font-weight: 550;
+    margin-bottom: -15px;
+}
+.second5{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 24rem;
+    color: rgb(255, 255, 255);
+    position: relative;
+    transition: color 0.5s ease-in;
+}
+.second5::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Start at the center */
+    width: 60%; /* Adjust this to set the desired width */
+    height: 1.4px; /* Adjust thickness */
+    background-color: rgb(255, 255, 255); /* Adjust color */
+    transform: translateX(-50%); /* Center align */
+    transition: height 0.5s ease-in background-color 0.5s ease-in;
+}
+.second5:hover::after{
+    height: 2.5px;
+    background-color: rgb(255, 255, 255);
+}
+.second5:hover{
+    color: rgb(255, 255, 255);
+}
+.button-container5 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    width: 100%;
+}
+.fifth_btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.fifth_btn:hover {
+    background-color: rgb(254, 254, 254);
+    color: rgb(0, 0, 0);
+}
+.fifth_btn2 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.fifth_btn2:hover {
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+
+/* Starting of seventh page */
+.hero6{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh; /* Ensure it takes the full viewport height */
+}
+.hero6 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.text-overlay6{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    margin-top: -3rem;
+}
+.first6{
+    font-size: 2.2rem;
+    font-weight: 550;
+    margin-bottom: -15px;
+}
+.second6{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 25rem;
+}
+.button-container6 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    width: 100%;
+}
+.sixth_btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.sixth_btn:hover {
+    background-color: rgb(254, 254, 254);
+    color: rgb(0, 0, 0);
+}
+.sixth_btn2 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.sixth_btn2:hover {
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+
+/* Starting of eighth page */
+.hero7{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh; /* Ensure it takes the full viewport height */
+}
+.hero7 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.text-overlay7{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    margin-top: -3rem;
+}
+.first7{
+    font-size: 2.2rem;
+    font-weight: 550;
+    margin-bottom: 25rem;
+}
+.button-container7 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    width: 100%;
+}
+.seventh_btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.seventh_btn:hover {
+    background-color: rgb(254, 254, 254);
+    color: rgb(0, 0, 0);
+}
+.seventh_btn2 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.seventh_btn2:hover {
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+
+/* Starting of eighth page */
+.hero8{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh; /* Ensure it takes the full viewport height */
+}
+.hero8 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.text-overlay8{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    margin-top: -3rem;
+}
+.first8{
+    font-size: 2.2rem;
+    font-weight: 550;
+    margin-bottom: 25rem;
+}
+
+.button-container8 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    width: 100%;
+}
+.eighth_btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.eighth_btn:hover {
+    background-color: rgb(254, 254, 254);
+    color: rgb(0, 0, 0);
+}
+.eighth_btn2 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 100px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-family: 'Open Sans_SemiBold';
+}
+.eighth_btn2:hover {
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    color: rgba(222, 218, 218, 0.752);
+    font-family: 'Open Sans_Medium';
+}
+.top{
+    width: 35%;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-align: center;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Open Sans_Bold';
+}
+span{
+    text-decoration: underline;
+    color: rgba(222, 218, 218, 0.874);
+}
