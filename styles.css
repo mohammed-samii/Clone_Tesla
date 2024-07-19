@@ -1,3 +1,4 @@
+/* Import Fonts*/
 @font-face {
     font-family: 'Open Sans_Bold';
     src: url(assets/font/OpenSans-Bold.ttf);
@@ -19,6 +20,7 @@
     font-family: 'Open Sans_SemiBold' ;
     src: url(assets/font/OpenSans-SemiBold.ttf);
 }
+/*Default Styles*/
 html,body {
     margin: 0;
     padding: 0;
@@ -26,55 +28,7 @@ html,body {
     height: 100%;
     overflow-x:hidden;
 }
-
-#loading-screen {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    color: #fff;
-    z-index: 9999;
-    flex-direction: column;
-}
-
-.loader {
-    text-align: center;
-}
-
-.loader h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    animation: fadeIn 2s ease-in-out infinite;
-}
-
-.spinner {
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    border: 5px solid #fff;
-    border-top: 5px solid #e50914;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-@keyframes fadeIn {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-}
-
-#content {
-    display: none;
-}
+/*Header*/
 header {    
     position: absolute;
     display: flex;
@@ -119,6 +73,7 @@ header {
 .middle li {
     list-style: none;
 }
+/*First Page/Hero Section*/
 .hero{
     text-align: center;
     display: flex;
@@ -166,11 +121,11 @@ header {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 50%; /* Start at the center */
-    width: 60%; /* Adjust this to set the desired width */
-    height: 1.4px; /* Adjust thickness */
-    background-color: rgb(66, 63, 63); /* Adjust color */
-    transform: translateX(-52%); /* Center align */
+    left: 50%;
+    width: 60%; 
+    height: 1.4px; 
+    background-color: rgb(66, 63, 63); 
+    transform: translateX(-52%);
     transition: height 0.5s ease-in background-color 0.5s ease-in;
 }
 .third:hover::after{
@@ -226,7 +181,7 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 100vh; /* Ensure it takes the full viewport height */
+    height: 100vh; 
 }
 .hero2 img{
     width: 100%;
@@ -266,11 +221,11 @@ header {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 50%; /* Start at the center */
-    width: 48%; /* Adjust this to set the desired width */
-    height: 1.4px; /* Adjust thickness */
-    background-color: rgb(66, 63, 63); /* Adjust color */
-    transform: translateX(-50%); /* Center align */
+    left: 50%;
+    width: 48%; 
+    height: 1.4px; 
+    background-color: rgb(66, 63, 63); 
+    transform: translateX(-50%);
     transition: height 0.5s ease-in background-color 0.5s ease-in;
 }
 .third2:hover::after{
@@ -327,7 +282,7 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 100vh; /* Ensure it takes the full viewport height */
+    height: 100vh; 
 }
 .hero3 img{
     width: 100%;
@@ -407,7 +362,7 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 100vh; /* Ensure it takes the full viewport height */
+    height: 100vh; 
 }
 .hero4 img{
     width: 100%;
@@ -538,7 +493,7 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 100vh; /* Ensure it takes the full viewport height */
+    height: 100vh; 
 }
 .hero5 img{
     width: 100%;
@@ -573,11 +528,11 @@ header {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 50%; /* Start at the center */
-    width: 60%; /* Adjust this to set the desired width */
-    height: 1.4px; /* Adjust thickness */
-    background-color: rgb(255, 255, 255); /* Adjust color */
-    transform: translateX(-50%); /* Center align */
+    left: 50%;
+    width: 60%; 
+    height: 1.4px; 
+    background-color: rgb(255, 255, 255); 
+    transform: translateX(-50%); 
     transition: height 0.5s ease-in background-color 0.5s ease-in;
 }
 .second5:hover::after{
@@ -634,7 +589,7 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 100vh; /* Ensure it takes the full viewport height */
+    height: 100vh; 
 }
 .hero6 img{
     width: 100%;
@@ -709,7 +664,7 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 100vh; /* Ensure it takes the full viewport height */
+    height: 100vh; 
 }
 .hero7 img{
     width: 100%;
@@ -779,7 +734,7 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 100vh; /* Ensure it takes the full viewport height */
+    height: 100vh; 
 }
 .hero8 img{
     width: 100%;
@@ -841,6 +796,7 @@ header {
     background-color: rgb(42, 42, 42);
     color: white;
 }
+/* Footer */
 footer{
     background-color: black;
     display: flex;
